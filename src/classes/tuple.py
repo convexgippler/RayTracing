@@ -1,4 +1,6 @@
-from math import sqrt
+from math import sqrt, isclose
+
+EPSILON: float = 0.0000000000000001
 
 
 class Tuple:
@@ -37,7 +39,10 @@ class Tuple:
         return f"({self.x}, {self.y}, {self.z}, {self.w})"
 
     def __eq__(self, o) -> bool:
-        return self.x == o.x and self.y == o.y and self.z == o.z and self.w == o.w
+        return isclose(self.x, o.x, abs_tol=EPSILON) and \
+               isclose(self.x, o.x, abs_tol=EPSILON) and \
+               isclose(self.x, o.x, abs_tol=EPSILON) and \
+               self.w == o.w
 
 
 def point(x: float, y: float, z: float) -> Tuple:

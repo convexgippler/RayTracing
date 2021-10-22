@@ -1,7 +1,6 @@
 import unittest
-from math import sqrt
 
-from src.tuple import *
+from src.classes.tuple import *
 
 
 class Tuple_Test(unittest.TestCase):
