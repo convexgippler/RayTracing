@@ -1,7 +1,5 @@
 from math import sqrt, isclose
-
-EPSILON: float = 0.0000000000000001
-
+from main import EPSILON
 
 class Tuple:
 

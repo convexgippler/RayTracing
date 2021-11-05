@@ -3,6 +3,9 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+EPSILON: float = 0.0000000000000001
+
+
 
 def print_hi(name: str):
     # Use a breakpoint in the code line below to debug your script.

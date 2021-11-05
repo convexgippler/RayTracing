@@ -25,7 +25,7 @@ if __name__ == '__main__':
     c = Canvas(900, 550)
 
     start = point(1,250, 0)
-    velocity = normalize(vector(20, 10, 0)) * 30
+    velocity = normalize(vector(20, 20, 0)) * 30
     p = Projectile(start, velocity)
 
     gravity = vector(0, -0.5, 0)

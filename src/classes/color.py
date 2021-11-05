@@ -21,8 +21,8 @@ class Color:
     def __sub__(self, other):
         return color_from_tuple(self.tuple - other.tuple)
 
-    def __mul__(self, scalar:float):
-        return color_from_tuple(self.tuple*scalar)
+    def __mul__(self, scalar: float):
+        return color_from_tuple(self.tuple * scalar)
 
     def __eq__(self, other) -> bool:
         return self.tuple == other.tuple
