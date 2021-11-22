@@ -30,6 +30,9 @@ class Matrix:
                 result[row, column] = np.sum(a)
         return Matrix(result)
 
+    def __str__(self):
+        return self.matrix.__str__()
+
     def size(self):
         size, _ = self.matrix.shape
         return size

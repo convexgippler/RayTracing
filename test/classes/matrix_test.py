@@ -258,3 +258,19 @@ class MatrixTest(unittest.TestCase):
             [0.17778, 0.06667, -0.26667, 0.33333],
         ])
         self.assertEqual(B, inverse(A))
+
+    def test_multiply_by_inverse(self):
+        A = Matrix([
+            [3, -9, 7, 3],
+            [3, -8, 2, -9],
+            [-4, 4, 4, 1],
+            [-6, 5, -1, 1],
+        ])
+        B = Matrix([
+            [3, -9, 7, 3],
+            [3, -8, 2, -9],
+            [-4, 4, 4, 1],
+            [-6, 5, -1, 1],
+        ])
+        C = A * B
+        self.assertEqual(C*inverse(B),A)
